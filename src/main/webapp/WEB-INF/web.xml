@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.peytosoft.helloweb.addServlet</servlet-class> <!-- Specify the fully qualified class name of your servlet -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/submit</url-pattern> <!-- Specify the URL pattern to which this servlet should respond -->
+    </servlet-mapping>
+
+</web-app>
+
