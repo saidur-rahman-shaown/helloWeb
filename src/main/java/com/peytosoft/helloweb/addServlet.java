@@ -27,6 +27,8 @@ public class addServlet extends HttpServlet {
 //                "</form><br>");
 //        out.println("<h1> the result is " + k + "</h1>");
 //        out.println("</body></html>");
+        req.setAttribute("k", k);
+
         RequestDispatcher rd = req.getRequestDispatcher("sq");
         try {
             rd.forward(req, res);

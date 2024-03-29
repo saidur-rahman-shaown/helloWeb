@@ -26,5 +26,15 @@
         <url-pattern>/sq</url-pattern> <!-- Specify the URL pattern to which this servlet should respond -->
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SquareServlet</servlet-name>
+        <servlet-class>com.peytosoft.helloweb.squareServlet</servlet-class> <!-- Specify the fully qualified class name of your servlet -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SquareServlet</servlet-name>
+        <url-pattern>/sub</url-pattern> <!-- Specify the URL pattern to which this servlet should respond -->
+    </servlet-mapping>
+
 </web-app>
 
